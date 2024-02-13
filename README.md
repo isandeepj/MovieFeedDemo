@@ -1,6 +1,6 @@
 # SwiftUI Top Movies App with Combine and Alamofire
 
-This SwiftUI application fetches and displays the top movies from the Apple iTunes top movie RSS feed. It leverages SwiftUI for a modern UI, incorporates Combine for handling asynchronous operations, and utilizes Alamofire for making network requests. The app also features navigation using `List` and `NavigationLink`, and movie previews played through `PlayerView`.
+This SwiftUI application fetches and displays the top movies from the Apple iTunes top movie RSS feed. It leverages SwiftUI for a modern UI, incorporates Combine for handling asynchronous operations, and utilizes Alamofire for making network requests. The app also features navigation using `List` and `NavigationLink`, and movie previews are played through `VideoPlayer`.
 
 
 ## Features
@@ -10,7 +10,7 @@ This SwiftUI application fetches and displays the top movies from the Apple iTun
 - Utilizes SwiftUI for a modern and responsive user interface.
 - Implements navigation using `List` and `NavigationLink`.
 - Demonstrates network requests using Alamofire and handles responses with Combine.
-- Plays movie previews using `PlayerView`.
+- Plays movie previews using `VideoPlayer`.
 
 ## Screenshots
 <img src="https://github.com/isandeepj/MovieFeedDemo/assets/24805252/456934cd-39f1-43c4-936b-c94ede3a6492" alt="Screenshot 1" width="300" />
@@ -39,7 +39,7 @@ This SwiftUI application fetches and displays the top movies from the Apple iTun
 
 **Swift Package Manager**:
 
-Add the following dependencies in your Package.swift file
+Add the following dependencies to your Package.swift file
 
 ```bash
 dependencies: [
@@ -49,12 +49,12 @@ targets: [
     .target(name: "YourTarget", dependencies: ["Alamofire"]),
 ]
 ```
-Run swift package update to fetch the Alamofire library.
+Run a swift package update to fetch the Alamofire library.
 
 
 **Combine**:
 
-Combine is part of the Apple's SDK and is included by default when using SwiftUI
+Combine is part of Apple's SDK and is included by default when using SwiftUI
 
 ## Contributing
 Contributions are welcome! Feel free to open issues, create pull requests, or suggest improvements.
@@ -65,4 +65,4 @@ Contributions are welcome! Feel free to open issues, create pull requests, or su
 The app fetches data from the Apple iTunes top movie RSS feed: https://itunes.apple.com/us/rss/topmovies/limit=50/json
 
 ## How to Play Previews
-Previews are played using the PlayerView. Ensure the device or simulator has network connectivity to stream preview content.
+Previews are played using the VideoPlayer. Ensure the device or simulator has network connectivity to stream preview content.
